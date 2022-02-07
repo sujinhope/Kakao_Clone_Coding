@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Main from './Main';
+import HomeMain from './HomeMain';
 
 const Home = () => {
 
@@ -9,7 +9,7 @@ const Home = () => {
       <div id="kakaoWrap" _ngcontent-keh-c87 className="gnb_type1 wrap_home">
         <Header />
         <hr className="hide"></hr>
-        <Main />
+        <HomeMain />
       </div>
     </div>
   )

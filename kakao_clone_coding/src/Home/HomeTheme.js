@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomeTheme = () => {
   return (
-    <div className="area_g area_home_theme">
+    <div _ngcontent-keh-c123="true" className="area_g area_home_theme">
       <h3 className="screen_out">선물 테마 선택</h3>
       <div className="wrap_home_theme">
         <div className="inner_home_theme">

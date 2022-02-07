@@ -1,11 +1,15 @@
 import React from 'react';
+import GiftRanking from './GiftRanking';
+import GiftBnr from './GiftBnr';
+import AIKeyword from './AIKeyword';
 import HomeTheme from './HomeTheme';
 
-const Main = () => {
+const HomeMain = () => {
   return (
     <main id="kakaoContent">
       <article id="mArticle">
         <h2 className="screen_out">홈</h2>
+        {/** Home_Profile */}
         <div className="area_home_profile">
           <div className="wrap_home_profile">
             <h3 className="screen_out">친구 선택</h3>
@@ -26,10 +30,14 @@ const Main = () => {
             </div>
           </div>
         </div>
+        {/** Home_Theme */}
         <HomeTheme />
+        <AIKeyword />
+        <GiftBnr />
+        <GiftRanking />
       </article>
     </main>
   )
 }
 
-export default Main;
+export default HomeMain;
