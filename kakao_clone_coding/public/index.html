@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta charset="utf-8">
+    <title>선물하기</title>
+    <base href="/">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="description" content="마음을 전하는 가장 쉬운 방법">
+    <meta name="naver-site-verification" content="421666339f6b120711654b0dd61cf1ac32df2c01">
+    <meta name="google-site-verification" content="NBo7K5IvIpC4p9tgzKVEzeCH1oP6ad652VeJFChLoaw">
+    <!--g_preview_meta_s-->
+    <meta name="ogType" property="og:type" content="website">
+    <meta name="ogTitle" property="og:title" content="카카오톡 선물하기">
+    <meta name="ogDescription" property="og:description" content="지금, 내 마음을 전하는 가장 쉬운 방법">
+    <meta name="ogImage" property="og:image" content="https://t1.daumcdn.net/gift/favicon/og-image.png">
+    <!--g_preview_meta_e-->
+    <link rel="icon" type="image/png" href="https://t1.daumcdn.net/gift/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://t1.daumcdn.net/gift/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="https://gift-s.kakaocdn.net/dn/gift/common/kakaotalk_gift.png">
+    <link rel="shortcut icon" href="https://gift-s.kakaocdn.net/dn/gift/common/kakaotalk_gift.png">
+    <script>
+      window._unsupported_queue = [['set', 'gift']];
+    </script>
+    <script async="" src="https://st.kakaocdn.net/commerce_ui/static/unsup/latest.min.js"></script>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="https://st.kakaocdn.net/commerce_ui/gift-front/real/20220204/100515/styles.2313a57e83e86634e2d8.css" media="all" onload="this.media='all'">
+    <script src="https://st.kakaocdn.net/commerce_ui/static/sentry/5.17.0/bundle.min.js"></script>
+    <script>Sentry.init({dsn:'https://bac5710081fd412b81369229192777e8@aem-collector.daumkakao.io/1206',release:'c44e90fa0',ignoreErrors:["ChunkLoadError"]})</script>
+    <script src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script>
+    <style>
+      cu-popup-container2.__snackbar {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        bottom: constant(safe-area-inset-bottom);
+        bottom: env(safe-area-inset-bottom, 0px);
+      }
+    </style>
+    <style>[_nghost-keh-c89]{display:block;height:100%}</style>
+    <style>#_body[_ngcontent-keh-c87], [_nghost-keh-c87]{min-height:100%}</style>
+    <style>.area_ai_keyword[_ngcontent-keh-c123] + .area_g[_ngcontent-keh-c123], .area_gift_bnr[_ngcontent-keh-c123] + .area_g[_ngcontent-keh-c123], .area_home_theme[_ngcontent-keh-c123] + .area_g[_ngcontent-keh-c123]{border-top:none}</style>
+    <style>.touch[_ngcontent-keh-c107]   .wrap_home_theme[_ngcontent-keh-c107]   .inner_home_theme[_ngcontent-keh-c107]{max-height:293px}</style>
+    <style>#gift-ranking[_ngcontent-keh-c110]{position:relative}</style>
+    <style>.wrap_detail   [_nghost-keh-c86]   .item_footer[_ngcontent-keh-c86]{padding-bottom:50px}</style>
+    <style>ngx-flicking[_ngcontent-keh-c119]{z-index:0}</style>
+    <style>.flicking-viewport{overflow:hidden;position:relative}.flicking-camera{-ms-flex-direction:row;-webkit-box-direction:normal;-webkit-box-orient:horizontal;display:-webkit-box;display:-ms-flexbox;display:flex;flex-direction:row;height:100%;position:relative;width:100%;z-index:1}.flicking-camera>*{-ms-flex-negative:0;flex-shrink:0}.flicking-viewport.vertical,.flicking-viewport.vertical>.flicking-camera{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex}.flicking-viewport.vertical>.flicking-camera{-ms-flex-direction:column;-webkit-box-direction:normal;-webkit-box-orient:vertical;flex-direction:column}.flicking-viewport.flicking-hidden .flicking-camera>*{visibility:hidden}
+      /*# sourceMappingURL=flicking.css.map */
+    </style>
+    <style>[_nghost-keh-c121]{display:block}</style>
+    <style>gl-link[_ngcontent-keh-c118]{display:inline-block}</style>
+    <noscript><link rel="stylesheet" href="https://st.kakaocdn.net/commerce_ui/gift-front/real/20220204/100515/styles.2313a57e83e86634e2d8.css"></noscript>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

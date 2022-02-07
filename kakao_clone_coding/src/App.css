@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@charset "utf-8";
+
+.global_spinner {
+  z-index: 999999999;
+  position: fixed;
+  top: 45px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('https://t1.daumcdn.net/gift/common/global-spinner.gif');
+  background-size: 80px 80px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.pc .global_spinner {
+  top: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
+  color: #333;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+body {
+  -webkit-text-size-adjust: none;
+}
+body {
+  background: #fff;
+}
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: -apple-system, Apple SD Gothic Neo, sans-serif;
+  color: #000;
+}
+body,
+html {
+  min-width: 320px;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3),
+  only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3),
+  only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2),
+  only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3),
+  only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  body,
+  html {
+    min-height: 100vh;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3),
+  only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3),
+  only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2),
+  only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3),
+  only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  body,
+  html {
+    min-height: 100vh;
   }
 }

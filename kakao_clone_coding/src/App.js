@@ -1,13 +1,16 @@
 import Home from './Home/Home';
 import logo from './logo.svg';
+import './App.css';
 import './styles_kakao.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>누구를 위한 선물인가요?</h1>
-      <Home />
-    </div>
+    <app-root _nghost-keh-c89>
+      <router-outlet _ngcontent-keh-c89=""></router-outlet>
+      <app-view-wrapper _nghost-keh-c87>
+        <Home />
+      </app-view-wrapper>
+    </app-root>
   );
 }
 
