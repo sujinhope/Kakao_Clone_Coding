@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -24,6 +25,7 @@ const Header = () => {
                         </a>
                     </div>
                 </div>
+               
                 <div className="wrap_gnv" id="Gnb">
                     <h2 className="screen_out">선물하기 메인메뉴</h2>
                     <ul className="gnb_gift">
@@ -33,12 +35,12 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="food">
-                            <a href="" className="link_menu">
+                            <a href="/food" className="link_menu">
                                 <span className="txt_menu">미식선물</span>
                             </a>
                         </li>
                         <li className="season">
-                            <a href="" className="link_menu">
+                            <a href="/season" className="link_menu">
                                 <span className="txt_menu">
                                     발렌타인
                                     <span className="ico_dot"></span>
@@ -46,17 +48,17 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="best">
-                            <a href="" className="link_menu">
+                            <a href="/best" className="link_menu">
                                 <span className="txt_menu">베스트</span>
                             </a>
                         </li>
                         <li className="brand">
-                            <a href="" className="link_menu">
+                            <a href="/brand" className="link_menu">
                                 <span className="txt_menu">브랜드</span>
                             </a>
                         </li>
                         <li className="giftbox">
-                            <a href="" className="link_menu">
+                            <a href="/giftbox" className="link_menu">
                                 <span className="txt_menu">선물함</span>
                             </a>
                         </li>

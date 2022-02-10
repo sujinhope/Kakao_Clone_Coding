@@ -6,8 +6,7 @@ import HomeTheme from './HomeTheme';
 
 const HomeMain = () => {
   return (
-    <main id="kakaoContent">
-      <article id="mArticle">
+    <>
         <h2 className="screen_out">홈</h2>
         {/** Home_Profile */}
         <div className="area_home_profile">
@@ -35,8 +34,7 @@ const HomeMain = () => {
         <AIKeyword />
         <GiftBnr />
         <GiftRanking />
-      </article>
-    </main>
+    </>
   )
 }
 
