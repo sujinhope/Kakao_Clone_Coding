@@ -18,13 +18,16 @@ function App() {
         <Header />
         <Router>
           <Routes>
-              <Route path="/home" element={<HomeMain />} />
+            <Route path="/" element={<Home />}>
+              <Route path="/" element={<HomeMain />} />
               <Route path="/best" element={<HomeMain />} />
-              <Route path="/brand" element={<Brand />} />
-              <Route path="/brand/category/:num" element={<Category />} />
+              <Route path="/brand" element={<Brand />}>
+                <Route path="/brand/category/:num" element={<Category />} />
+              </Route>
+            </Route>
               {/* {definitions.map(({number, elem}) => <Route path={`/brand/category/:${number}`} elemment={elem} />)} */}
               {/* <Route path="/brand/category/:number" element={<DetailBrand />} /> */}
-              <Route path="/*" element={<Home />} />
+              <Route path="/*" element={<Home />} />     
           </Routes>
         </Router>
         </div>
