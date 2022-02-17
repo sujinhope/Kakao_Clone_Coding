@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <header id="kakaoHead" _ngcontent-keh-c87>
+        <header id="kakaoHead" _ngcontent-keh-c87="">
             <div className="khead">
                 <div className="wrap_tit">
                     <h1 className="tit_gift">

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import './Brand.scss';
 import CateBanner from './CateBanner';
+import HotBrand from './HotBrand';
 
 const Brand = () => {
   return (
@@ -11,7 +12,7 @@ const Brand = () => {
         <div>
           <div>
             <CateBanner />
-            
+            <HotBrand />
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ const CateBanner = () => {
             return (e.box_type == "boxcate_type1")
           }).map((e, index) => {
             return (
-              <Category id={"type1_"+index} category = {e} />
+              <Category key={"type1_"+index} category = {e} />
             )
           })}
         </div>
@@ -21,7 +21,7 @@ const CateBanner = () => {
             return (e.box_type == "boxcate_type2")
           }).map((e, index) => {
             return (
-              <Category id={"type2_"+index} category = {e} />
+              <Category key={"type2_"+index} category = {e} />
             )
           })}
         </div>
@@ -30,7 +30,7 @@ const CateBanner = () => {
             return (e.box_type == "boxcate_type3")
           }).map((e, index) => {
             return (
-              <Category id={"type3_"+index} category = {e} />
+              <Category key={"type3_"+index} category = {e} />
             )
           })}
         </div>

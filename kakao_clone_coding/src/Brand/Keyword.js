@@ -86,6 +86,65 @@ const BrandCategoryList = [
   },
 ];
 
+const BrandHotList = [
+  {
+    id: 1,
+    keyword: "Dior",
+    ad_href: "",
+    ad_background: "https://t1.daumcdn.net/gift/brand/displayBanner/20220214_ZSHPG.png?w=600&h=338&convert=crop",
+    imgSrc: "https://img1.kakaocdn.net/thumb/C70x70.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fgift_brand%2F20200331041243_64b9b65cff1d4a2d9516ed032a84268f",
+  },
+  {
+    id: 2,
+    keyword: "JO MALONE",
+    ad_href: "",
+    ad_background: "https://t1.daumcdn.net/gift/brand/displayBanner/20220211_WDXLH.png?w=600&h=338&convert=crop",
+    imgSrc: "https://img1.kakaocdn.net/thumb/C70x70.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fgift_brand%2F20210215121710_8a6b0521760944178e61e01388eda48c.jpg",
+  },
+  {
+    id: 3,
+    keyword: "LAB SERIES",
+    ad_href: "",
+    ad_background: "https://t1.daumcdn.net/gift/brand/displayBanner/20220211_BADWI.png?w=600&h=338&convert=crop",
+    imgSrc: "https://img1.kakaocdn.net/thumb/C70x70.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fgift_brand%2F20200331035328_d847189961094e86a2960e5fe5f4752d",
+  },
+  {
+    id: 4,
+    keyword: "athe",
+    ad_href: "",
+    ad_background: "https://t1.daumcdn.net/gift/brand/displayBanner/20220211_LEYFV.png?w=600&h=338&convert=crop",
+    imgSrc: "https://img1.kakaocdn.net/thumb/C70x70.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fgift_brand%2F20200331041403_c819ab58f92d4cb08afcf1f2a70450c8",
+  },
+  {
+    id: 5,
+    keyword: "PIAGET",
+    ad_href: "",
+    ad_background: "https://t1.daumcdn.net/gift/brand/displayBanner/20220209_EUWSG.png?w=600&h=338&convert=crop",
+    imgSrc: "https://img1.kakaocdn.net/thumb/C70x70.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fgift_brand%2F20220106160304_c858c431f6cf4b66be01a777409497a7.jpg",
+  },
+  {
+    id: 6,
+    keyword: "NARS",
+    ad_href: "",
+    ad_background: "https://t1.daumcdn.net/gift/brand/displayBanner/20220209_BIQLQ.png?w=600&h=338&convert=crop",
+    imgSrc: "https://img1.kakaocdn.net/thumb/C70x70.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fgift_brand%2F20200331040852_b7c5d1ba877d4eaeb29d4d8cdf84ba7c",
+  },
+  {
+    id: 7,
+    keyword: "LAROCHE POSAY",
+    ad_href: "",
+    ad_background: "https://t1.daumcdn.net/gift/brand/displayBanner/20220209_NNBKC.png?w=600&h=338&convert=crop",
+    imgSrc: "https://img1.kakaocdn.net/thumb/C70x70.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fgift_brand%2F20210119100955_8c6d9469ae0c49b2a2b95095c18314f0.jpg",
+  },
+  {
+    id: 8,
+    keyword: "YVES SAINT LAURENT",
+    ad_href: "",
+    ad_background: "https://t1.daumcdn.net/gift/brand/displayBanner/20220209_CEMUC.png?w=600&h=338&convert=crop",
+    imgSrc: "https://img1.kakaocdn.net/thumb/C70x70.q82/?fname=https%3A%2F%2Fst.kakaocdn.net%2Fproduct%2Fgift%2Fgift_brand%2F20200331040854_ff683e45f4d246ef9da5787115ead31c",
+  },
+];
+
 const Keyword = () => {
 
   return (
@@ -95,5 +154,5 @@ const Keyword = () => {
   )
 
 }
-export { BrandCategoryList };
+export { BrandCategoryList, BrandHotList };
 export default Keyword;
