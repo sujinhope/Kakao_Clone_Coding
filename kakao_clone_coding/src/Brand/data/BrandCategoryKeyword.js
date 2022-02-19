@@ -1,22 +1,44 @@
 import React from 'react';
 
-
-const MidBrandList = [
+const SubCategoryList = [
   {
-    brandId: 1,
-    keyword: "",
+    brandId: 140,
+    keyword: "베이커리/도넛/떡",
+    url: "140",
   },
   {
-    brandId: 2,
-    keyword: "",
+    brandId: 141,
+    keyword: "카페",
+    url: "141",
   },
   {
-    brandId: 3,
-    keyword: "",
+    brandId: 142,
+    keyword: "아이스크림/빙수",
+    url: "142",
+  },
+  {
+    brandId: 143,
+    keyword: "구이/족발",
+    url: "143",
+  },
+  {
+    brandId: 144,
+    keyword: "치킨",
+    url: "144",
+  },
+  {
+    brandId: 145,
+    keyword: "버거/피자",
+    url: "145",
+  },
+  {
+    brandId: 146,
+    keyword: "편의점",
+    url: "146",
   },
 ];
 
-const MidCategoryList = [
+const BrandList = [
     {
       categoryId: 1,
       brandId: 1,
@@ -86,4 +108,4 @@ const MidCategoryList = [
     },
 ]
 
-export { };
+export { SubCategoryList, BrandList };

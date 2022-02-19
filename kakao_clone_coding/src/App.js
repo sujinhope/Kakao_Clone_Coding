@@ -26,8 +26,9 @@ function App() {
               <Route path="/brand" element={<Brand />}>
                 <Route path="/brand" element={<BrandHome />} />
                 <Route path="/brand/category" >
-                  <Route path="/brand/category/:num" element={<BrandCategory />} />
-                  <Route path="/brand/category/:num/subcategory/:num" element={<BrandSubCategory />} />
+                  <Route path="/brand/category/:cateId" element={<BrandCategory />} >
+                    <Route path="/brand/category/:cateId/subcategory/:subCateId" element={<BrandSubCategory />} />
+                  </Route>
                 </Route>
               </Route>
             </Route>

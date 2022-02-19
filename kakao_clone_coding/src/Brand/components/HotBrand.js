@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { BrandHotList } from '../data/BrandHomeKeyword';
+import { HotList } from '../data/BrandHomeKeyword';
 
 const HotBrand = () => {
 
@@ -30,7 +30,7 @@ const HotBrand = () => {
         </gl-link>
         <ul className="list_hotnew">
           {
-            BrandHotList.map((e, index) => {
+            HotList.map((e, index) => {
               return (
                 <li _ngcontent-exp-c109="" className="hotnew_item" key={e.id}>
                   <a _ngcontent-exp-c109="" id={index} 

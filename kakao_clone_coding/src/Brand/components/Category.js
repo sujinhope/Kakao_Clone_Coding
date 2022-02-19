@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Category = ( props ) => {
 
@@ -16,7 +17,7 @@ const Category = ( props ) => {
         <div _ngcontent-jkn-c108="true" className="_box" style={{paddingTop : category.paddingTop ? category.paddingTop : "90.4762%"}}>
           <div _ngcontent-jkn-c108="true" className="_box-inner" >
             <gl-link _ngcontent-jkn-c108="true" class="_gl-link">
-              <a className="link_boxcate ng-star-inserted" href="/brand/category/91">
+              <NavLink className="link_boxcate ng-star-inserted" to={category.url}>
                 {
                   category.flickingCamera ? 
                     <>
@@ -42,7 +43,7 @@ const Category = ( props ) => {
                       <></>
                   }
                 </span>
-              </a>
+              </NavLink>
             </gl-link>
           </div>
         </div>

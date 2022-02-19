@@ -3,7 +3,6 @@ import { Link, Outlet } from 'react-router-dom';
 import '../Brand.scss';
 
 const Brand = () => {
-  console.log('BrandTab')
   return (
     <>
       <div className="cont_brand">
