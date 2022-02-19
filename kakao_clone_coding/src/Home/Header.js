@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink, Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -48,14 +49,14 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="best">
-                            <a href="/best" className="link_menu">
+                            <NavLink to="/best" className="link_menu">
                                 <span className="txt_menu">베스트</span>
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="brand">
-                            <a href="/brand" className="link_menu">
+                            <NavLink to="/brand" className="link_menu">
                                 <span className="txt_menu">브랜드</span>
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="giftbox">
                             <a href="/giftbox" className="link_menu">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrandCategoryList } from './Keyword';
+import { BrandCategoryList } from '../data/BrandHomeKeyword';
 import Category from './Category';
 
 const CateBanner = () => {

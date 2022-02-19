@@ -145,7 +145,8 @@ const BrandHotList = [
   },
 ];
 
-const Keyword = () => {
+
+const BrandHomeKeyword = () => {
 
   return (
     <div>
@@ -155,4 +156,4 @@ const Keyword = () => {
 
 }
 export { BrandCategoryList, BrandHotList };
-export default Keyword;
+export default BrandHomeKeyword;

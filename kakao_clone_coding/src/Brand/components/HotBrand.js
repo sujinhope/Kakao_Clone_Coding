@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { BrandHotList } from './Keyword';
+import { BrandHotList } from '../data/BrandHomeKeyword';
 
 const HotBrand = () => {
 
