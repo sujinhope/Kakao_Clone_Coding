@@ -5,12 +5,12 @@ import { SubCategoryList, BrandList } from '../data/BrandCategoryKeyword';
 const BrandSubCategoryMenu = () => {
 
   const { cateId, subCateId } = useParams();
-  const [selected, setSelected] = useState('');
-  console.log(selected);
+  const [selected, setSelected] = useState('140'); // default 페이지/값 설정하기
 
-  useEffect(() => {
-    setSelected(subCateId);
-  })
+  const onClick = (event) => {
+    console.log(event.currentTarget.getAttribute("data-id"));
+    setSelected(event.currentTarget.getAttribute("data-id"))
+  }
   
   return (
     <>
@@ -20,14 +20,13 @@ const BrandSubCategoryMenu = () => {
           <ul className="list_midcate">
             {
               SubCategoryList.map(e => {
-                console.log(subCateId == selected);
-                console.log(e);
                 return (
-                  <li key={e.brandId} className={e.brandId == selected ? "ng-star-inserted on" : "ng-star-inserted"}>
+                  <li key={e.subCateId} className={e.subCateId == selected ? "ng-star-inserted on" : "ng-star-inserted"}>
                     <NavLink 
                       to={"/brand/category/"+cateId+"/subcategory/"+e.url} 
                       className="link_midcate"
-                      data-id={e.brandId}
+                      onClick={onClick}
+                      data-id={e.subCateId}
                     >
                       {e.keyword}
                     </NavLink>

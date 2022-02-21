@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, NavLink, Outlet } from 'react-router-dom';
 import '../data/BrandHomeKeyword';
 import { MainCategoryList } from '../data/BrandHomeKeyword';
-import BrandSubCategory from './BrandSubCategory';
 import BrandSubCategoryMenu from './BrandSubCategoryMenu';
 
 const BrandCategory = () => {
@@ -19,7 +18,7 @@ const BrandCategory = () => {
 
   useEffect(() => {
     setCategory(MainCategoryList.filter(e => {return e.id == cateId})[0])
-    console.log(category);
+    console.log("category");
   })
 
   return (

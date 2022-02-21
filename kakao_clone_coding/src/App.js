@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BrandCategory from './Brand/pages/BrandCategory';
 import BrandHome from './Brand/pages/BrandHome';
 import BrandSubCategory from './Brand/pages/BrandSubCategory';
+import BrandDetail from './Brand/pages/BrandDetail';
 
 function App() {
   return (
@@ -23,10 +24,12 @@ function App() {
             <Route path="/" element={<Home />}>
               <Route path="/" element={<HomeMain />} />
               <Route path="/best" element={<HomeMain />} />
-              <Route path="/brand" element={<Brand />}>
+              <Route path="/brand" >
                 <Route path="/brand" element={<BrandHome />} />
+                <Route path="/brand/:brandId" element={<Brand />} />
                 <Route path="/brand/category" >
                   <Route path="/brand/category/:cateId" element={<BrandCategory />} >
+                    <Route path="/brand/category/:cateId" element={<BrandSubCategory />} />
                     <Route path="/brand/category/:cateId/subcategory/:subCateId" element={<BrandSubCategory />} />
                   </Route>
                 </Route>

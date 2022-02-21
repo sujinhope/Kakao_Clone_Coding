@@ -5,10 +5,13 @@ import HotBrand from '../components/HotBrand';
 const BrandHome = () => {
   return (
     <>
-      <div>
+      <div className="cont_brand">
+        <h2 className="screen_out">브랜드탭</h2>
         <div>
-          <CateBanner />
-          <HotBrand />
+          <div>
+            <CateBanner />
+            <HotBrand />
+          </div>
         </div>
       </div>
     </>
