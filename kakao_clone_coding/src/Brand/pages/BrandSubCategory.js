@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, NavLink } from 'react-router-dom';
-import { BrandList } from '../data/BrandCategoryKeyword';
+import { BrandList, SubCategoryList } from '../data/BrandCategoryKeyword';
 import '../data/BrandHomeKeyword';
 import { MainCategoryList } from '../data/BrandHomeKeyword';
 import BrandAd from './BrandAd';
 
 const BrandSubCategory = () => {
 
-  const { cateId, subCateId } = useParams();
+  let { cateId, subCateId } = useParams();
 
   const [ opencate, setOpencate ] = useState('');
   const [ category, setCategory ] = useState('140');
+  const [ subcategory, setSubcategory ] = useState('140');
+  const [ brandlist, setBrandlist ] = useState('');
 
   const openSubCategory = (event) => {
     event.preventDefault();
@@ -18,8 +20,15 @@ const BrandSubCategory = () => {
   }
 
   useEffect(() => {
-    setCategory(MainCategoryList.filter(e => {return e.id == cateId})[0])
-  })
+    if(!subCateId) subCateId = 140;
+    // setCategory(MainCategoryList.filter(e => {console.log(e); return e.id == cateId})[0])
+    setSubcategory(SubCategoryList.filter(e => {return e.subCateId == subCateId})[0]);
+    setBrandlist(BrandList.filter(e => {return e.subCateId == subCateId}));
+  }, [subCateId])
+
+  useEffect(()=>{
+    console.log(brandlist)
+  }, [brandlist])
 
   return (
     <>
@@ -27,7 +36,7 @@ const BrandSubCategory = () => {
         <div _ngcontent-vuf-c141="" className="inner_botcate">
         {/* <h2>SubCategory, {subCateId}</h2> */}
           <div className="listtype_botcate" data-tiara-layer="Mcate">
-            <h3 className="tit_listtype"><span className="txt_listtype">베이커리/도넛/떡</span></h3>
+            <h3 className="tit_listtype"><span className="txt_listtype">{subcategory.keyword}</span></h3>
             <div className="wrap_filter">
               <div className="box_filter">
                 <em _ngcontent-pio-c132="" className="screen_out">상품정렬 선택</em>
@@ -70,7 +79,7 @@ const BrandSubCategory = () => {
                               , width: "390px", position: "absolute", left: "0px"}}>
                       
                       {/* 브랜드(ex - 투썸) */}
-                      { BrandList.map(e => {
+                      { brandlist && brandlist.map(e => {
                           return (
                             <div className="wrap_brand ng-star-inserted" key={`${e.subCateId} ${e.brandId}`}>
                               <div>

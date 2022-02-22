@@ -3,6 +3,7 @@ import React from 'react';
 const MainCategoryList = [
   {
     id: 91,
+    default: 140,
     box_type: "boxcate_type1",
     itme_type: "boxcate_itme1",
     keyword: "모바일교환권",
@@ -13,6 +14,7 @@ const MainCategoryList = [
   },
   {
     id: 92,
+    default: 140,
     box_type: "boxcate_type1",
     itme_type: "boxcate_itme1",
     keyword: "상품권/영화/도서",

@@ -7,4 +7,5 @@ const BrandDetailList = [
   },
 ];
 
+
 export { BrandDetailList };

@@ -8,6 +8,7 @@ const BrandSubCategoryMenu = () => {
   const [selected, setSelected] = useState('140'); // default 페이지/값 설정하기
 
   const onClick = (event) => {
+    console.log(event.currentTarget);
     console.log(event.currentTarget.getAttribute("data-id"));
     setSelected(event.currentTarget.getAttribute("data-id"))
   }
