@@ -5,9 +5,9 @@ import Brand from './Brand/pages/Brand';
 import './App.css';
 import './styles_kakao.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import BrandCategory from './Brand/pages/BrandCategory';
+import BrandCategory from './Brand/components/BrandCategory';
 import BrandHome from './Brand/pages/BrandHome';
-import BrandSubCategory from './Brand/pages/BrandSubCategory';
+import BrandSubCategory from './Brand/components/BrandSubCategory';
 import BrandDetail from './Brand/pages/BrandDetail';
 
 function App() {
